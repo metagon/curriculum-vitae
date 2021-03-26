@@ -9,19 +9,11 @@ endif
 
 # define placeholder environment variables
 ifndef CVPHONE
-	export CVPHONE=(+XX) XXXXXXXXXX
+	export CVPHONE=Upon Request
 endif
 
 ifndef CVADDRESS
-	export CVADDRESS=Example Street 1, Test Town, Earth
-endif
-
-ifndef CVEMAIL
-	export CVEMAIL=john.doe@example.com
-endif
-
-ifndef CVHOMEPAGE
-	export CVHOMEPAGE=www.example.com
+	export CVADDRESS=Vienna, Austria
 endif
 
 .PHONY: default clean view
