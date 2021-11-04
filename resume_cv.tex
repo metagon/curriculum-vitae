@@ -44,7 +44,7 @@
  }
 \ExplSyntaxOff
 
-\geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
+\geometry{left=2cm, top=1cm, right=2cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
 
 \fontdir[fonts/] % Specify the location of the included fonts
 
@@ -68,7 +68,10 @@
 \getenv[\cvphone]{CVPHONE}
 \getenv[\cvaddress]{CVADDRESS}
 
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{./graphics/profile.jpg}
 \name{Philippos}{Gorgoris}
+\position{Software Engineer}
 \address{\cvaddress}
 \mobile{\cvphone}
 
@@ -85,16 +88,15 @@
 %\extrainfo{test} % Other text you want to include on this line
 
 %\position{Software Engineer{\enskip\cdotp\enskip}Security Expert} % Your expertise/fields
-\position{Software Engineer}
 %\quote{``Make the change that you want to see in the world."} % A quote or statement
 
-\makecvfooter{\today}{}{Philippos Gorgoris~~~·~~~Curriculum Vitae} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
+\makecvfooter{\today}{}{Philippos Gorgoris, MSc~~~·~~~Curriculum Vitae} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
 
-\makecvheader % Print the header
+\makecvheader[C] % Print the header
 
 %----------------------------------------------------------------------------------------
 %	CV/RESUME CONTENT

@@ -4,7 +4,7 @@ SOURCE=resume_cv
 ifeq ($(shell uname), Darwin)
 	VIEWER=open
 else
-	VIEWER=xreader
+	VIEWER=okular
 endif
 
 # define placeholder environment variables
