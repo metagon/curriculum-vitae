@@ -9,11 +9,11 @@ endif
 
 # define placeholder environment variables
 ifndef CVPHONE
-	export CVPHONE=Upon Request
+	export CVPHONE=Auf Anfrage
 endif
 
 ifndef CVADDRESS
-	export CVADDRESS=Vienna, Austria
+	export CVADDRESS=Wien, Österreich
 endif
 
 .PHONY: default clean view
@@ -21,6 +21,7 @@ endif
 default: clean $(SOURCE).pdf
 
 $(SOURCE).pdf: $(SOURCE).tex
+	xelatex $<
 	xelatex $<
 
 clean:

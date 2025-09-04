@@ -26,6 +26,8 @@
 
 \documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
 
+\usepackage[ngerman]{babel}
+\usepackage{csquotes}
 \usepackage{xparse}
 
 % Read environment variables to hide sensitive information
@@ -49,7 +51,7 @@
 \fontdir[fonts/] % Specify the location of the included fonts
 
 % Color for highlights
-\colorlet{awesome}{awesome-skyblue} % Default colors include: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red} % Default colors include: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
 %\definecolor{awesome}{HTML}{CA63A8} % Uncomment if you would like to specify your own color
 
 % Colors for text - uncomment and modify
@@ -70,12 +72,12 @@
 
 % Available options: circle|rectangle,edge/noedge,left/right
 \photo[circle,noedge,left]{./graphics/profile.jpg}
-\name{Philippos}{Gorgoris}
+\name{DI}{Philippos Gorgoris}
 \position{Software Engineer}
 \address{\cvaddress}
 \mobile{\cvphone}
 
-\email{philippos@gorgoris.com}
+\email{philipgorgoris@gmail.com}
 \homepage{www.gorgoris.com}
 \github{metagon}
 %\linkedin{posquit0}
@@ -90,7 +92,7 @@
 %\position{Software Engineer{\enskip\cdotp\enskip}Security Expert} % Your expertise/fields
 %\quote{``Make the change that you want to see in the world."} % A quote or statement
 
-\makecvfooter{\today}{}{Philippos Gorgoris, MSc~~~·~~~Curriculum Vitae} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
+\makecvfooter{\today}{}{Dipl.-Ing. Philippos Gorgoris~~~·~~~Lebenslauf} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
 
 %----------------------------------------------------------------------------------------
 
@@ -103,8 +105,8 @@
 %	Each section is imported separately, open each file in turn to modify content
 %----------------------------------------------------------------------------------------
 
-\input{cv-sections/education.tex}
 \input{cv-sections/experience.tex}
+\input{cv-sections/education.tex}
 \input{cv-sections/skills.tex}
 
 %\newpage % Force a new page for looks
