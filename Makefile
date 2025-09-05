@@ -16,6 +16,10 @@ ifndef CVADDRESS
 	export CVADDRESS=Wien, Österreich
 endif
 
+ifndef CVDATEOFBIRTH
+	export CVDATEOFBIRTH=Auf Anfrage
+endif
+
 .PHONY: default clean view
 
 default: clean $(SOURCE).pdf
